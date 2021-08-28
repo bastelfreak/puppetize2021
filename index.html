@@ -470,12 +470,52 @@ class: center, middle, inverse
 .left-column[
 ## Module Design
 ### Status Quo
+### Roles & Profiles
 ]
 
 .right-column[
-* Roles and profiles pattern!
+.nowidth[![imagefoo](rapwoh.svg)]
+]
 
-![imagefoo](rap.svg)
+<a href='https://example42.com' alt='company website example42'><img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 20px; width: 100px;"/></a>
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
+
+???
+
+---
+
+.left-column[
+## Module Design
+### Status Quo
+### Roles & Profiles
+### Data vs Code
+]
+
+.right-column[
+* People that write Puppet Code might not provide the data
+]
+
+<a href='https://example42.com' alt='company website example42'><img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 20px; width: 100px;"/></a>
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
+
+???
+
+---
+.left-column[
+## Module Design
+### Status Quo
+### Roles & Profiles
+### Data vs Code
+]
+
+.right-column[
+* People that write Puppet Code might not provide the data
+
+* System administrators team A write Puppet code
+
+* System administrators from team B provide ip addresses
+
+* Product owner provide version numbers
 
 ]
 
@@ -484,10 +524,154 @@ class: center, middle, inverse
 
 ???
 
+---
+.left-column[
+## Module Design
+### Status Quo
+### Roles & Profiles
+### Data vs Code
+]
+
+.right-column[
+* People that write Puppet Code might not provide the data
+
+* System administrators team A write Puppet code
+
+* System administrators from team B provide ip addresses
+
+* Product owner provide version numbers
+
+* Secrets should come from a secret store like Vault
+]
+
+<a href='https://example42.com' alt='company website example42'><img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 20px; width: 100px;"/></a>
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
+
+???
 
 ---
+.left-column[
+## Module Design
+### Status Quo
+### Roles & Profiles
+### Data vs Code
+]
 
+.right-column[
+* People that write Puppet Code might not provide the data
 
+* System administrators team A write Puppet code
+
+* System administrators from team B provide ip addresses
+
+* Product owner provide version numbers
+
+* Secrets should come from a secret store like Vault
+
+* Design requirement 3: Separate data and code
+]
+
+<a href='https://example42.com' alt='company website example42'><img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 20px; width: 100px;"/></a>
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
+
+???
+
+---
+.left-column[
+## Module Design
+### Status Quo
+### Roles & Profiles
+### Data vs Code
+]
+
+.right-column[
+.nowidth[![imagefoo](rap.svg)]
+]
+
+<a href='https://example42.com' alt='company website example42'><img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 20px; width: 100px;"/></a>
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
+
+???
+
+---
+.left-column[
+## Module Design
+### Status Quo
+### Roles & Profiles
+### Data vs Code
+]
+
+.right-column[
+* It's hard for enforce code design/architecture with CI jobs
+
+* You might leak private information if you publish an existing internal module
+]
+
+<a href='https://example42.com' alt='company website example42'><img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 20px; width: 100px;"/></a>
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
+
+???
+
+---
+.left-column[
+## Why Open Sourcing?
+### Technical aspects
+]
+
+.right-column[
+* Publish a module from the beginning
+
+* This enforces a proper structure in your code
+]
+
+<a href='https://example42.com' alt='company website example42'><img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 20px; width: 100px;"/></a>
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
+
+???
+
+---
+.left-column[
+## Why Open Sourcing?
+### Technical aspects
+]
+
+.right-column[
+* Publish a module from the beginning
+
+* This enforces a proper structure in your code
+
+* This ensures secrets are never added to it
+]
+
+<a href='https://example42.com' alt='company website example42'><img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 20px; width: 100px;"/></a>
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
+
+???
+
+---
+.left-column[
+## Why Open Sourcing?
+### Technical aspects
+]
+
+.right-column[
+* Publish a module from the beginning
+
+* This enforces a proper structure in your code
+
+* This ensures secrets are never added to it
+
+* Many companies still don't have internal CI
+
+  * There are free CI services for open source software!
+]
+
+<a href='https://example42.com' alt='company website example42'><img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 20px; width: 100px;"/></a>
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
+
+???
+
+---
 .left-column[
 ## Yak shaving
 ### Dependencies
