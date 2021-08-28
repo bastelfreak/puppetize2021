@@ -207,6 +207,8 @@ class: center, middle, inverse
 
 # Why Open Source brings more value to business?
 
+## Or why you should publish your Puppet modules
+
 ???
 
 ---
@@ -224,7 +226,7 @@ class: center, middle, inverse
 
 * Senior Automation Consultant at [example42](https://example42.com/)
 
-<a href='https://example42.com' alt='company website example42'><img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 0px; width: 100px;"/></a>
+<a href='https://example42.com' alt='company website example42'><img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 20px; width: 100px;"/></a>
 ???
 
 *
@@ -250,8 +252,7 @@ class: center, middle, inverse
 * Maintain many many Puppet modules
 
 ]
-<img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 0px; width: 100px;"/>
-
+<a href='https://example42.com' alt='company website example42'><img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 20px; width: 100px;"/></a>
 .footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
 
 ???
@@ -271,8 +272,8 @@ class: center, middle, inverse
 * Be helpful and polite to each other
 
 ]
-<img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 0px; width: 100px;"/>
 
+<a href='https://example42.com' alt='company website example42'><img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 20px; width: 100px;"/></a>
 .footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
 
 ???
@@ -291,8 +292,8 @@ class: center, middle, inverse
 * Be open-minded to people and technology
 
 ]
-<img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 0px; width: 100px;"/>
 
+<a href='https://example42.com' alt='company website example42'><img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 20px; width: 100px;"/></a>
 .footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
 
 ???
@@ -313,8 +314,8 @@ class: center, middle, inverse
 * Provide a home for orphaned Puppet modules
 
 ]
-<img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 0px; width: 100px;"/>
 
+<a href='https://example42.com' alt='company website example42'><img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 20px; width: 100px;"/></a>
 .footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
 
 ???
@@ -337,8 +338,8 @@ class: center, middle, inverse
 * Unite lonely module and tooling authors to a collective
 
 ]
-<img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 0px; width: 100px;"/>
 
+<a href='https://example42.com' alt='company website example42'><img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 20px; width: 100px;"/></a>
 .footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
 
 ???
@@ -362,8 +363,8 @@ class: center, middle, inverse
 
 * Ensure continued development for our code
 ]
-<img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 0px; width: 100px;"/>
 
+<a href='https://example42.com' alt='company website example42'><img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 20px; width: 100px;"/></a>
 .footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
 
 ???
@@ -379,8 +380,8 @@ class: center, middle, inverse
 
 ![img](contributors.svg)
 ]
-<img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 0px; width: 100px;"/>
 
+<a href='https://example42.com' alt='company website example42'><img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 20px; width: 100px;"/></a>
 .footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
 
 ???
@@ -390,45 +391,102 @@ class: center, middle, inverse
 ---
 class: center, middle, inverse
 
-# The path of a Open Source Maintainer...
-
-## What do we do?
+# How to design a good Puppet module?
 
 ???
 
-* lets have a look on the daily tasks a maintainer can do to keep modules in shape
-
----
-
-background-image: url(yakshaving.jpg)
-background-size: cover
-
-???
-
-* lets start with yak shaving
 ---
 
 .left-column[
-## Yak shaving
-### Dependencies
+## Module Design
+### Status Quo
 ]
 
 .right-column[
 
-* new major releases in modules
+* You write your own component Puppet modules
 
-![imagefoo](vcsrepo.png)
+* You also want to reuse Open Source component modules from others
 
 ]
 
+<a href='https://example42.com' alt='company website example42'><img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 20px; width: 100px;"/></a>
 .footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
 
 ???
 
-Puppetlabs releases a new major version of stdlib
-
-metadata.json needs to be adjusted everywhere (upper version boundaries)
+* a component module manages a component of the infrastructure
+* a specific software
+* like nginx or mysql
 ---
+.left-column[
+## Module Design
+### Status Quo
+]
+
+.right-column[
+
+* You write your own component Puppet modules
+
+* You also want to reuse Open Source component modules from others
+
+* Many of your servers are very similar, but not identical
+]
+
+<a href='https://example42.com' alt='company website example42'><img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 20px; width: 100px;"/></a>
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
+
+???
+
+* all servers use your internal DNS resolver in /etc/resolv.conf
+* except for the DNS server itself, which forwards to cloudflare
+
+---
+.left-column[
+## Module Design
+### Status Quo
+]
+
+.right-column[
+
+* You write your own component Puppet modules
+
+* You also want to reuse Open Source component modules from others
+
+* Many of your servers are very similar, but not identical
+
+* Design requirement 1: somehow use internal and external modules in parallel
+
+* Design requirement 2: Somehow assign those modules to groups of servers
+]
+
+<a href='https://example42.com' alt='company website example42'><img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 20px; width: 100px;"/></a>
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
+
+???
+
+
+---
+.left-column[
+## Module Design
+### Status Quo
+]
+
+.right-column[
+* Roles and profiles pattern!
+
+![imagefoo](rap.svg)
+
+]
+
+<a href='https://example42.com' alt='company website example42'><img src="logo-540x540-3.png" alt="drawing" style="position: fixed; bottom: 12px; left: 20px; width: 100px;"/></a>
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
+
+???
+
+
+---
+
 
 .left-column[
 ## Yak shaving
