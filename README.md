@@ -11,6 +11,7 @@ is.
 * You can find the online version here: [bastelfreak.de/puppetize2021](https://bastelfreak.de/puppetize2021/#1)
 * And the pdfs here: [Tim_Meusel_-_Why_Open_Source_brings_more_value_to_business.pdf](https://bastelfreak.de/puppetize2021/Tim_Meusel_-_Why_Open_Source_brings_more_value_to_business.pdf)
 * The recording is not yet published
+* Online schedule: https://events.puppet.com/event/puppetize-digital-21/why-does-open-source-bring-more-value-to-business-2/
 
 * You can find more talks from bastelfreak in his [repository](https://github.com/bastelfreak/talks) (he is also available for Puppet consulting)
 
