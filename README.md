@@ -9,7 +9,7 @@ is.
 
 
 * You can find the online version here: [bastelfreak.de/puppetize2021](https://bastelfreak.de/puppetize2021/#1)
-* And the pdfs here: [Tim_Meusel_-_Why_Open_Source_brings_more_value_to_business.pdf](https://bastelfreak.de/puppetize2021/Tim_Meusel_-_Why_Open_Source_brings_more_value_to_business.pdf)
+* And the pdf here: [Tim_Meusel_-_Why_Open_Source_brings_more_value_to_business.pdf](https://bastelfreak.de/puppetize2021/Tim_Meusel_-_Why_Open_Source_brings_more_value_to_business.pdf)
 * [Video recording](https://www.youtube.com/watch?v=4gNLQgXr93Q)
 * Online schedule: https://events.puppet.com/event/puppetize-digital-21/why-does-open-source-bring-more-value-to-business-2/
 
